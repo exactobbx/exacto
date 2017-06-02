@@ -1,0 +1,155 @@
+<html>
+
+<head>
+    <style>
+        #section1 {
+            width: 100%;
+            min-height: 20vh;
+            text-align: center;
+            line-height: 30px;
+            background-color: black;
+            vertical-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #section2 {
+            width: 100%;
+            min-height: 80vh;
+            text-align: center;
+            line-height: 30px;
+            background-color: #FFF786;
+            vertical-align: center;
+            
+        }
+        
+       
+        
+        body {
+            margin: 0 !important;
+            font-family: "Open Sans";
+        }
+        
+        #exacto {
+            color: white;
+            font-family: "Open Sans";
+            font-size: 3em;
+        }
+        
+        #nav {
+            width: 90%;
+            color: white;
+            font-family: "Open Sans";
+            font-size: 1.2em;
+            display: flex;
+            flex-flow: wrap;
+            flex-wrap: wrap;
+            align-content: center;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+        
+        #menu {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 30px;
+        }
+        
+        #photo {
+            width: 520px;
+            height: 400px;
+            margin: 10px;
+        }
+        
+        #caption {background-color: white;
+            width:550px;
+            height:490px;
+            margin:10px;
+        }
+        
+.container {
+  position: relative !important;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+    position: absolute;
+
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity:0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute !important;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+    </style>
+
+</head>
+
+<body>
+    <div id="section1">
+        <div id="exacto">BEATBOX LESSONS</div>
+
+        <div id="nav">
+
+            <div id="menu">Performances</div>
+            <div id="menu">Competitions</div>
+            <div id="menu">Beatbox Lessons</div>
+            <div id="menu">Clients</div>
+            <div id="menu">Videos</div>
+            <div id="menu">Contact</div>
+
+        </div>
+
+    </div>
+
+
+    <div id="section2">
+        <p style="margin:0; padding-top:30px">Are you interested in learning how to beatbox?</p>
+    
+        <!--<div style="display:flex;  flex-direction: row;">-->
+        <!--    <div class="container">-->
+        <!--        <img src="./schoollesson.png" class="image">-->
+        <!--        <div class="overlay">-->
+        <!--            <div class="text">Hello World</div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+           
+    
+            <div id="caption"><img id="photo" src="./sofarteach.png"> Teaching a group of 60 adults how to beatbox</div>
+            <!--<div class="overlay">-->
+                <!--<div class="text">Sofar Sounds</div>-->
+            <!--</div>-->
+            <div id="caption"> <img id="photo" src="./schoollesson.png">Beatboxing workshop for middle schoolers at PS 39 in Brooklyn</div>
+        </div>
+    
+    </div>
+    
+     
+    </body>
+    
+    </html>

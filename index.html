@@ -1,97 +1,133 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    	<link media="all" rel="stylesheet" type="text/css"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link media="all" rel="stylesheet" type="text/css" />
     <style>
-    
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px) {
- #exacto {
-            color: white;
-            font-family: "Helvetica" !important ;
-            font-size: 12em !important;
-            z-index:0;
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+            #exacto {
+                color: white;
+                font-family: "Helvetica" !important;
+                font-size: 4em !important;
+                z-index: 0;
+            }
+            #menu {
+                margin: 10px;
+                z-index: 0;
+                font-size: 5em !important;
+                font-family: "Helvetica" !important;
+            }
+            #social {
+                height: 70px !important;
+                width: 70px !important;
+            }
+            
+            #nav{display:flex;
+            flex-direction:column !important;}
+            
+            #section15{height:200vh !important;}
+            #section2{height:150vh !important;}
+            #section2{height:150vh !important;}
+            
+            #prof{width:80%;}
         }
         
-        #menu {margin:10px;
-        z-index:0;
-        font-size: 5em !important;
-            font-family: "Helvetica" !important ;
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            transform: translateX(-50%) translateY(-50%);
+            background: url('./video.mp4') no-repeat;
+            background-size: cover;
+            transition: 1s opacity;
+            margin: 0;
         }
         
-        #social {
-        height:100px !important;
-        width:100px !important;
-        }
-
-}
-    
-        video{position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
- background: url('./video.mp4') no-repeat;
-  background-size: cover;
-  transition: 1s opacity;
-           
+        #section2 {
+            background: url(sofar4.png);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         
         .layer {
-    background-color: rgba(101, 101, 101, 0.4);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index:-80;
-}
-
-       a {color:white;
-          text-decoration: none;
-       }
-       
-       a:visited {color:white;}
-       
-       a:hover {color:#00CBF9;}
+            background-color: rgba(101, 101, 101, 0.4);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -80;
+        }
         
-       body {display: flex;
-           flex-direction: column;
-           justify-content: center;
-           align-items:center;
-       }
-       
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: white;
+        }
+        
+        a:hover {
+            color: #00CBF9;
+        }
+        
+        #section1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
         #exacto {
             color: white;
             font-family: "Open Sans";
             font-size: 5.5em;
-            z-index:0;
+            z-index: 0;
         }
         
-        #nav {
-            width:25%;
-            color: white;
-            font-family: "Open Sans";
-            font-size: 1.2em;
-            display:flex;
-            flex-flow: wrap;
-            flex-wrap: wrap;
-            align-content: center;
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            justify-content: space-around;
-            flex-direction: row;
-            z-index:0;
-            
-}
+            text-align: center;
+        }
         
-        #menu {margin:10px;
-        z-index:0; }
-       
+        #social:hover {
+            opacity: .7;
+        }
+        
+        #menu {
+            margin: 10px;
+            z-index: 0;
+        }
+        
+        #box{
+         
+            border-radius:6px;
+            background-color:#257F7F;
+            width:400px;
+            margin:25px;
+            height:200px;
+            
+        }
+        
+        #button{margin-top:8px;}
+        
+      
     </style>
 
 
@@ -100,32 +136,93 @@
 </head>
 
 <body>
-   
-    <video poster="./screenshot.png" id="bgvid" playsinline autoplay muted loop>
-   <source src="./video.mp4" type="video/webm">
-<source src="./video.mp4" type="video/mp4">
-</video>
- <div class="layer">
-    </div>
-    
-    <div id="exacto">EXACTO</div>
 
-    <div id="nav">
+    <div class="container" id="section1" style="height:100vh">
+        <video poster="./screenshot.png" id="bgvid" playsinline autoplay muted loop>
+           <source src="./video.mp4" type="video/webm">
+            <source src="./video.mp4" type="video/mp4">
+            </video>
+        <div class="layer">
+        </div>
 
-        <!--<div id="menu">Beatboxing</div>-->
-        <!--<div id="menu">Competitions</div>-->
-        <!--<a href ="Lessons.html"><div id="menu">Lessons</div> </a>-->
-        <!--<div id="menu">Clients</div>-->
-        <!--<div id="menu">Videos</div>-->
-       <a href="mailto:exactobbx@gmail.com?Subject=Hi%20there!" target="_top"> <div id="menu">Contact</div></a>
 
+        <h1 id="exacto">E X A C T O</h1>
+        <div class="row"  id="nav">
+            <div class="col-xs-6 col-md-4">
+                <a href="#section2">
+                    <h3 id="menu">Beatbox</h3>
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <a href="#section2">
+                    <h3 id="menu"> Lessons</h3>
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-4">
+                <a href="mailto:exactobbx@gmail.com?Subject=Hi%20there!" target="_top">
+                    <h3 id="menu">Contact</h3>
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <a href="http://www.instagram.com/exactobbx/"><img id="social" src="instagram.png" style="width:40px; height:40px;"></a>
+            <a href="http://www.facebook.com/ExactoBBX/"><img id="social" src="fb.png" style="width:40px; height:40px;"></a>
+            <a href="http://www.twitter.com/exactobbx"> <img id="social" src="twitter.png" style="width:40px; height:40px;"></a>
+            <a href="mailto:exactobbx@gmail.com?Subject=Hi%20there!" target="_top"> <img id="social" src="email.png" style="width:40px; height:40px;"></a>
+        </div>
     </div>
-    <div>
-        <a href="http://www.instagram.com/exactobbx/"><img id="social" src="instagram.png" style ="width:40px; height:40px;"></a>
-        <a href="http://www.facebook.com/ExactoBBX/"><img id="social" src="fb.png" style ="width:40px; height:40px;"></a>
-       <a href="http://www.twitter.com/exactobbx">    <img id="social" src="twitter.png" style ="width:40px; height:40px;"></a>
+
+    <div class="container" id="section15" style="height:50vh; width:100%; padding:40px;background-color:white; color:white">
+        <div class="row">
+        <div id="box" class="col-md-4" ><h2>Corporate Workshops</h2><h5>Entertaining workshops for your team or school to learn to beatbox. Previous clients include Mckinsey, William Alexander Middle School and more.</h5><button class="btn btn-lg btn-info" id="button">Learn more</button></div>
+        <div id="box" class="col-md-4" ><h2>Own the Stage Package</h2><h5>Master public speaking through learning to beatbox. A 2 month intensive to build confidence and musicality. </h5><button class="btn btn-lg btn-info" id="button">Learn more</button></div>
+        <div id="box" class="col-md-4" ><h2>Private Lessons</h2><h5>Available in New York or through Skype, 60 minute private lessons are a great way to learn the craft of beatboxing.</h5><button class="btn btn-lg btn-info" id="button">Learn more</button></div>
     </div>
-  
+    </div>
+
+
+
+    <div class="container" id="section2" style="height:50vh;padding:40px; width:100%;color:white">
+        <div class="layer2">
+        </div>
+        <h1 style="font-size:5em">Own the Stage Package</h1>
+        <h3>Master Public Speaking through Beatboxing</h3>
+    </div>
+
+    <div class="container" id="section3" style="height100vh; width:100%; padding:40px;background-color:#257F7F; color:white">
+        <h1>What you get:</h1>
+        <h3 style="line-height:45px">Initial 60 minute “get inspired, get clear” kick off session<br> to customize your package and get you pumped up for your transformation
+            <br>Weekly 1 on 1 private 60 minute beatboxing lessons
+            <br>24/7 Email access for support and urgent questions
+            <br>At home practice exercises and challenges
+            <br>Materials and resources to support your growth </h3>
+    </div>
+
+
+
+    <div class="container" id="section3" style="height100vh; width:100%; padding:40px; background-color:#F2994A; color:white">
+        <h1>Benefits of Learning to Beatbox:</h1>
+        <h3 style="line-height:45px">Conquer your fear of public speaking
+            <br>Step outside your comfort zone and learn a new skill
+            <br>Develop a growth mindset that can help you tackle any challenge
+            <br>Learning about the history of beatboxing and hip hop
+            <br>Hone your sense of rhythm or improve your musicality
+            <br>Bring a Wow factor to your business pitches
+        </h3>
+    </div>
+
+    <div class="container" id="section3" style="height100vh; width:100%; padding:40px; background-color:#1EAAAA; color:white">
+        <h1>Ethan “Exacto” Scott</h1>
+       
+        <div><img id ="prof" src="prof.jpg"></div>
+         <div class="row" style="width: 50%;margin: auto;">
+            <h4>
+                Ethan Scott, known as Exacto on stage, is a traveling artist and performer currently based in New York City. Focused on beatboxing, improv, stand-up, and painting, Ethan hopes to inspire the community to dance, sing, study, and overall enjoy life to the
+                fullest. “Exacto” has performed on stage for a variety of shows, ranging from poetry slams and break dance battles throughout the USA and Canada, to “Tourette’s Without Regrets” in Oakland, CA and America’s Got Talent in San Francisco.
+                <br><br> At a young age Ethan found visual and aural media to be the strongest forms of communication, and is determined to create a new look and sound with his work.</h4>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,240 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link media="all" rel="stylesheet" type="text/css" />
+    
+  
+
+ 
+
+    <style>
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+            #exacto {
+                
+                color: white;
+                font-family: "Helvetica" !important;
+                font-size: 4.5em !important;
+                z-index: 0;
+            }
+            #menu {
+                margin: 10px;
+                z-index: 0;
+                font-size: 3em !important;
+                font-family: "Helvetica" !important;
+            }
+            #social {
+                height: 60px !important;
+                width: 60px !important;
+            }
+            
+            #nav{display:flex;
+            flex-direction:column !important;}
+            
+            #section15{height:180vh !important;}
+            #section2{height:80vh !important;}
+           
+            
+            #prof{width:80%;}
+            
+              #box{
+         
+            border-radius:6px;
+            background-color:#257F7F;
+            width:300px !important;
+            margin:25px;
+            height:130px !important;
+           
+                }
+                
+            #bio {width:80% !important;}
+        
+        }
+        
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            transform: translateX(-50%) translateY(-50%);
+            background: url('./images//video.mp4') no-repeat;
+            background-size: cover;
+            transition: 1s opacity;
+            margin: 0;
+        }
+        
+        #section2 {
+            background: url(./images/sofar4.png);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .layer {
+            background-color: rgba(101, 101, 101, 0.4);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -80;
+        }
+        
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: white;
+        }
+        
+        a:hover {
+            color: #00CBF9;
+        }
+        
+        #section1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #exacto {
+            color: white;
+            font-family: "Open Sans";
+            font-size: 5.5em;
+            z-index: 0;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        #social:hover {
+            opacity: .7;
+        }
+        
+        #menu {
+            margin: 10px;
+            z-index: 0;
+        }
+        
+        #box{
+         
+            border-radius:6px;
+            background-color:#257F7F;
+            width:400px;
+            margin:25px;
+            height:150px important; 
+            
+        }
+        
+        #button{margin-top:8px;}
+        
+      
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+<div class="container" id="section2" style="height:20%;padding:40px; width:100%;color:white">
+        <div class="layer2">
+        </div>
+        <h1 style="font-size:5em">Own the Stage Package</h1>
+        <h3>Master Public Speaking through Beatboxing</h3>
+        <!-- <button class="btn btn-lg btn-info" style ="background-color: #F2994A" id="button"> Enroll for $350</button> -->
+    </div>
+<div class="container" id="section3" style="height100vh; width:100%; padding:40px; background-color:#F2994A; color:white">
+        <h1>Course Outline</h1>
+        <h3 style="line-height:28px">
+            <b>Week 1</b><br>
+History of beatboxing
+<br>Your first beat/The basics: “boots n cats” Learn BTK
+<br>Setting goals for the course
+ <br><br>
+<b>Week 2 </b><br>
+Mix it up- Rhythms 
+<br>Add the Bass - bim tim kim 
+ <br><br>
+Week 3<br>
+Take it easy: breath control and circular breathing
+<br>Learning special sounds 
+ <br><br>
+Week 4<br>
+Make it funky: integrating beats with special sounds 
+<br>Alternative snares: piff snares and inward k 
+ <br><br>
+Week 5<br>
+Speed it up: fast beats
+<br>Advanced breath control
+ <br><br>
+Week 6<br>
+Party time: electronic sounds 
+ <br><br>
+Week 7<br>
+Leave them speechless: power sounds 
+ <br><br>
+Week 8<br>
+Finale
+<br>Resources for first show
+    </div>
+
+
+ <div class="container" id="section3" style="height100vh; width:100%; padding:40px; background-color:#5bc0de; color:white">
+        <h1>Pricing</h1>
+        <h3 style="line-height:45px">8-week package (online): $350
+<br>8-week package (In-Person): $425
+<br>4-week intensive (online): $400
+<br>4-week intensive (In-Person): $450
+
+<br>*Intensives include 2 hour sessions instead of 1 hour sessions. 
+        </h3>
+    </div>
+
+    <div class="container" id="section3" style="height100vh; width:100%; padding:40px;background-color:#257F7F; color:white">
+        <h1>What you get:</h1>
+
+        <h4 style="line-height:45px">Initial 60 minute “get inspired, get clear” kick off session<br> to customize your package and get you pumped up for your transformation
+            <br>Weekly 1 on 1 private 60 minute beatboxing lessons
+            <br>24/7 Email access for support and urgent questions
+            <br>At home practice exercises and challenges
+            <br>Materials and resources to support your growth </h4>
+    </div>
+
+
+
+    <div class="container" id="section3" style="height100vh; width:100%; padding:40px; background-color:#F2994A; color:white">
+        <h1>Benefits of Learning to Beatbox:</h1>
+        <h3 style="line-height:45px">Conquer your fear of public speaking
+            <br>Step outside your comfort zone and learn a new skill
+            <br>Develop a growth mindset that can help you tackle any challenge
+            <br>Learning about the history of beatboxing and hip hop
+            <br>Hone your sense of rhythm or improve your musicality
+            <br>Bring a Wow factor to your business pitches
+        </h3>
+    </div>
+
+</body>
+</html>

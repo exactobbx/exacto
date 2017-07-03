@@ -2,11 +2,17 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link media="all" rel="stylesheet" type="text/css" />
+    
+  
+
+ 
+
     <style>
         @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
             #exacto {
@@ -32,7 +38,7 @@
             
             #section15{height:180vh !important;}
             #section2{height:80vh !important;}
-            #section2{height:150vh !important;}
+           
             
             #prof{width:80%;}
             
@@ -42,7 +48,7 @@
             background-color:#257F7F;
             width:300px !important;
             margin:25px;
-            height:230px !important;
+            height:150px !important;
            
                 }
                 
@@ -60,14 +66,14 @@
             height: auto;
             z-index: -100;
             transform: translateX(-50%) translateY(-50%);
-            background: url('./video.mp4') no-repeat;
+            background: url('./images/video.mp4') no-repeat;
             background-size: cover;
             transition: 1s opacity;
             margin: 0;
         }
         
         #section2 {
-            background: url(sofar4.png);
+            background: url(./images/sofar4.png);
             background-size: cover;
             display: flex;
             flex-direction: column;
@@ -135,11 +141,12 @@
             background-color:#257F7F;
             width:400px;
             margin:25px;
-            height:200px;
+            height:150px;
             
         }
         
         #button{margin-top:8px;}
+        img{margin: 4px;}
         
       
     </style>
@@ -152,9 +159,9 @@
 <body>
 
     <div class="container" id="section1" style="height:100vh">
-        <video poster="./screenshot.png" id="bgvid" playsinline autoplay muted loop>
-           <source src="./video.mp4" type="video/webm">
-            <source src="./video.mp4" type="video/mp4">
+        <video poster="./images/screenshot.png" id="bgvid" playsinline autoplay muted loop>
+           <source src="./images/video.mp4" type="video/webm">
+            <source src="./images/video.mp4" type="video/mp4">
             </video>
         <div class="layer">
         </div>
@@ -163,12 +170,12 @@
         <h1 id="exacto">E X A C T O</h1>
         <div class="row"  id="nav">
             <div class="col-xs-6 col-md-4">
-                <a href="#section2">
+                <a href="#section15">
                     <h3 id="menu">Beatbox</h3>
                 </a>
             </div>
             <div class="col-xs-6 col-md-4">
-                <a href="#section2">
+                <a href="#section16">
                     <h3 id="menu"> Lessons</h3>
                 </a>
             </div>
@@ -180,63 +187,88 @@
         </div>
 
         <div>
-            <a href="http://www.instagram.com/exactobbx/"><img id="social" src="instagram.png" style="width:40px; height:40px;"></a>
-            <a href="http://www.facebook.com/ExactoBBX/"><img id="social" src="fb.png" style="width:40px; height:40px;"></a>
-            <a href="http://www.twitter.com/exactobbx"> <img id="social" src="twitter.png" style="width:40px; height:40px;"></a>
-            <a href="mailto:exactobbx@gmail.com?Subject=Hi%20there!" target="_top"> <img id="social" src="email.png" style="width:40px; height:40px;"></a>
+            <a href="http://www.instagram.com/exactobbx/"><img id="social" src="./images/instagram.png" style="width:40px; height:40px;"></a>
+            <a href="http://www.facebook.com/ExactoBBX/"><img id="social" src="./images/fb.png" style="width:40px; height:40px;"></a>
+            <a href="http://www.twitter.com/exactobbx"> <img id="social" src="./images/twitter.png" style="width:40px; height:40px;"></a>
+            <a href="mailto:exactobbx@gmail.com?Subject=Hi%20there!" target="_top"> <img id="social" src="./images/email.png" style="width:40px; height:40px;"></a>
         </div>
     </div>
 
-    <div class="container" id="section15" style="height:50vh; width:100%; padding:40px;background-color:white; color:white">
+<div class="container" id="section15" style="height:20%; width:100%; padding:40px;background-color:#F2994A; color:white">
+   
+        <div class="row" >
+            <div class="col-md-3"><img style="height: 220px ; " src="./images/sofartop.png"></div>
+       <div class="col-md-3" ><img style="height: 220px;" src="./images/schoollesson.png"></div>
+       <div class="col-md-3" ><img style="height: 220px; " src="./images/broadway.png"></div>
+         <div class="col-md-3"><img style="height: 220px ;  " src="./images/david.jpg"></div>
+         
+     
+     </div>
+<br><i><h3>Life of a Beatboxer: Exacto</i></h3>  
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/2orGsLTRewM" frameborder="0" allowfullscreen></iframe>
+
+
+    </div>
+
+
+
+
+    <div class="container" id="section16" style="height:20%; width:100%; padding:3.5%;background-color:white; color:white">
+        <h1 style="color:#1EAAAA"> Learn to Beatbox </h1>
         <div class="row">
-        <div id="box" class="col-md-4" ><h2>Corporate Workshops</h2><h5>Entertaining workshops for your team or school to learn to beatbox. Previous clients include Mckinsey, William Alexander Middle School and more.</h5><button class="btn btn-lg btn-info" id="button">Learn more</button></div>
-        <div id="box" class="col-md-4" ><h2>Own the Stage Package</h2><h5>Master public speaking through learning to beatbox. A 2 month intensive to build confidence and musicality. </h5><button class="btn btn-lg btn-info" id="button">Learn more</button></div>
-        <div id="box" class="col-md-4" ><h2>Private Lessons</h2><h5>Available in New York or through Skype, 60 minute private lessons are a great way to learn the craft of beatboxing.</h5><button class="btn btn-lg btn-info" id="button">Learn more</button></div>
+            <div id="app1" v-bind:style="{display: 'block'}">
+       <a href="./corporate.html"> <div id="box" class="col-md-4"  @click="corporate=true"><h2>Corporate Workshops</h2><button class="btn btn-lg btn-info" id="button">Learn More</button></div></a>
+      <a href="./ownstage.html">  <div id="box" class="col-md-4" ><h2>Own the Stage Package</h2>
+
+            <button class="btn btn-lg btn-info" id="button">Learn More</button></div></a>
+       <a href="./private.html"> <div id="box" class="col-md-4" ><h2>Private Lessons</h2><button class="btn btn-lg btn-info" id="button">Learn More</button></div></a>
+</div>    
     </div>
     </div>
 
 
 
-    <div class="container" id="section2" style="height:50vh;padding:40px; width:100%;color:white">
-        <div class="layer2">
-        </div>
-        <h1 style="font-size:5em">Own the Stage Package</h1>
-        <h3>Master Public Speaking through Beatboxing</h3>
-    </div>
 
-    <div class="container" id="section3" style="height100vh; width:100%; padding:40px;background-color:#257F7F; color:white">
-        <h1>What you get:</h1>
-        <h3 style="line-height:45px">Initial 60 minute “get inspired, get clear” kick off session<br> to customize your package and get you pumped up for your transformation
-            <br>Weekly 1 on 1 private 60 minute beatboxing lessons
-            <br>24/7 Email access for support and urgent questions
-            <br>At home practice exercises and challenges
-            <br>Materials and resources to support your growth </h3>
-    </div>
-
-
-
-    <div class="container" id="section3" style="height100vh; width:100%; padding:40px; background-color:#F2994A; color:white">
-        <h1>Benefits of Learning to Beatbox:</h1>
-        <h3 style="line-height:45px">Conquer your fear of public speaking
-            <br>Step outside your comfort zone and learn a new skill
-            <br>Develop a growth mindset that can help you tackle any challenge
-            <br>Learning about the history of beatboxing and hip hop
-            <br>Hone your sense of rhythm or improve your musicality
-            <br>Bring a Wow factor to your business pitches
-        </h3>
-    </div>
 
     <div class="container" id="section3" style="height100vh; width:100%; padding:40px; background-color:#1EAAAA; color:white">
         <h1>Ethan “Exacto” Scott</h1>
        
-        <div><img id ="prof" src="prof.jpg"></div>
-         <div class="row" id ="bio" style="width: 50%;margin: auto;">
-            <h4>
-                Ethan Scott, known as Exacto on stage, is a traveling artist and performer currently based in New York City. Focused on beatboxing, improv, stand-up, and painting, Ethan hopes to inspire the community to dance, sing, study, and overall enjoy life to the
-                fullest. “Exacto” has performed on stage for a variety of shows, ranging from poetry slams and break dance battles throughout the USA and Canada, to “Tourette’s Without Regrets” in Oakland, CA and America’s Got Talent in San Francisco.
-                <br><br> At a young age Ethan found visual and aural media to be the strongest forms of communication, and is determined to create a new look and sound with his work.</h4>
+        <div><img id ="prof" src="./images/prof.jpg"></div>
+         <div class="row" id ="bio" style="width: 60%;margin: auto;">
+            <h4  style="line-height:35px">
+               Ethan Scott, known as “Exacto” on stage, is a professional beatboxer, teacher, and painter. Ethan has performed in over 250 shows in New York and internationally, 20+ comedy festivals, and corporate workshops for top name companies around the world. 
+
+               <br><br>Exacto teaches lessons and workshops for children and adults, offers private acoustic concerts for parties and events, plays with Sofar Sounds, and performs every Saturday night with his Hip-Hop Improv Comedy Team “North Coast.""
+ 
+ 
+</h4>
         </div>
     </div>
+
+ <div class="container" id="section15" style="height:20%; width:100%; padding:40px;background-color:white; color:white">
+     <h1 style=" color:#1EAAAA" >As seen in...</h1>
+        <div class="row" >
+        
+       <div class="col-md-3" ><img style="width: 250px;" src="./images/vh1.png"></div>
+         <div class="col-md-3"><img style="width: 330px ; margin-top:40px " src="./images/mckinsey.png"></div>
+         <div class="col-md-3"><img style="width: 230px; margin-top:20px "  src="./images/vice.png"></div>
+         <div class="col-md-3"><img style="width: 230px"  src="./images/audible.png"></div>
+    
+     <div class="col-md-3"><img  style="width: 130px; margin: 40px" src="./images/un.jpeg"></div>
+         <div class="col-md-3"><img  style="width: 150px" src="./images/gap.png"></div>
+          <div class="col-md-3"><img  style="width: 220px  ; margin-top:40px " src="./images/sofar.png"></div>
+           <div class="col-md-3"><img  style="width: 220px" src="./images/ricola.jpeg"></div>
+   
+      <div class="col-md-3"><img  style="width: 220px  ; margin-top:40px " src="./images/thrillest.png"></div>
+         <div class="col-md-3"><img  style="width: 230px" src="./images/broadway.jpeg"></div>
+         <div class="col-md-3"><img  style="width: 150px" src="./images/timeout.png"></div>
+          <div class="col-md-3"><img  style="width: 300px; margin-top:40px " src="./images/ucb.png"></div>
+     </div>
+
+
+    </div>
+
+
 </body>
 
 </html>
